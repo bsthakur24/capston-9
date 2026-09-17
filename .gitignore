@@ -1,0 +1,18 @@
+# Environment
+.venv/
+.env
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data (large, regenerated via the notebooks - see README)
+# recommendation_ready/ is the stable artifact engine.py/dashboard.py load at runtime,
+# so it's committed - the app needs it deployed, not just regenerated locally.
+data/*
+!data/recommendation_ready/
+
+# Editor/OS lock files
+.~lock.*#
+.DS_Store
